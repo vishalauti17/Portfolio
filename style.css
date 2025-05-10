@@ -47,7 +47,7 @@ body {
     display: flex;
     justify-content: space-around;
     margin: 50px -60px ;
-    /*align-items: centre;*/
+    /align-items: centre;/
    }
 
    .firstsection > Div {
@@ -82,6 +82,50 @@ body {
     color: rgb(34, 18, 79);
     margin: 47px 106px;
    }
+
+   
+ /* Responsive CSS for 2408 × 1080 px screens */
+@media screen and (max-width: 2408px) {
+    body {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    nav {
+        padding: 15px;
+        height: auto;
+    }
+
+    .left {
+        font-size: 2rem;
+    }
+
+    .rightsection img {
+        width: 70%;
+        max-width: 600px;
+    }
+
+    .firstsection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .leftsection {
+        font-size: 3rem;
+        margin: 20px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    .hr1 {
+        width: 90%;
+        margin: 30px auto;
+    }
+}
 
    .heading{
     text-decoration: underline;
@@ -149,32 +193,6 @@ body {
     margin: 34px 0px 15px 0;
   }
 
-  /* footer nav div{
-    justify-content: left;
-  }
-  
-  .contact_head{
-    text-decoration: underline;
-    margin: 0px 0px 9px 230px;
-  }
-
-  .contact {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .foot_left {
-    margin: 5px -101px;
-  } */
-
-  /* .foot_right {
-    background-color: red;
-    padding: 2% 331px;
-    margin: -34px 207px 0px 0px;
-    flex-direction: column;
-  } */
-
-/* Contact Section */
 .contact-form {
   text-align: center;
   padding: 20px;
@@ -215,81 +233,4 @@ body {
 .copyright {
   margin-top: 10px;
   font-size: 14px;
-}
-
-/* Default styles will be for large screens (above 1200px) */
-
-/* For screens between 3200px and 1200px */
-@media screen and (max-width: 3200px) and (min-width: 1200px) {
-  .firstsection {
-    justify-content: space-evenly;
-  }
-  
-  .rightsection img {
-    width: 600px; /* Large size */
-  }
-}
-
-/* For laptops and standard desktops (between 1200px and 992px) */
-@media screen and (max-width: 1200px) and (min-width: 992px) {
-  .firstsection {
-    flex-direction: row;
-  }
-
-  .leftsection, .rightsection {
-    width: 48%;
-  }
-
-  .rightsection img {
-    width: 500px;
-  }
-}
-
-/* For tablets (between 992px and 768px) */
-@media screen and (max-width: 992px) and (min-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .firstsection {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .rightsection img {
-    width: 450px;
-  }
-}
-
-/* For mobile screens (between 768px and 480px) */
-@media screen and (max-width: 768px) and (min-width: 480px) {
-  nav {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
-  }
-
-  .leftsection {
-    font-size: 2rem;
-  }
-
-  .rightsection img {
-    width: 100%; /* Make it fit the screen */
-  }
-
-  .section3 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .section3 div {
-    width: 90%;
-    margin: 20px 0;
-  }
-
-  .contact-form p {
-    font-size: 16px;
-  }
 }
