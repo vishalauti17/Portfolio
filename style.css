@@ -192,7 +192,10 @@ body {
   .third i{
     margin: 34px 0px 15px 0;
   }
-
+ 
+  .section4 div ul li{
+    margin: 42px 1px 680px 166px;
+  }
 .contact-form {
   text-align: center;
   padding: 20px;
