@@ -216,3 +216,42 @@ body {
   margin-top: 10px;
   font-size: 14px;
 }
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack the menu items */
+  }
+
+  .firstsection {
+    flex-direction: column; /* Stack sections */
+    align-items: center;
+  }
+
+  .leftsection, .rightsection {
+    width: 100%; /* Full width for better visibility */
+    text-align: center;
+  }
+
+  .rightsection img {
+    width: 80%; /* Resize the image */
+  }
+
+  .section3 {
+    flex-direction: column; /* Stack service boxes */
+    align-items: center;
+  }
+
+  .section3 div {
+    width: 80%; /* Adjust width */
+    margin: 20px 0;
+  }
+
+  .contact-form {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
